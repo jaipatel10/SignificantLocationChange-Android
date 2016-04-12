@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="significantlocationchange.cf.com.significantlocationlib">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <service android:name="com.cf.significantlocationlib.LocationChangeService"/>
+
+        <receiver
+            android:name="com.cf.significantlocationlib.SignificantReceiver"
+            android:exported="true">
+            <intent-filter android:priority="999">
+                <action android:name="com.dubaipolice.app.ACTION_RECEIVE_GEOFENCE" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>
