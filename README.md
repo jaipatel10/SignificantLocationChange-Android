@@ -5,13 +5,9 @@ SignificantLocationChange : The name itself says about something related to loca
 How to use it?
 
 StartReceiving Updates whenever you need it by calling :
-
-/*Start Receiving Updates*/
 SignificantLocationChange.sharedInstance().startReceivingUpdates(SampleActivity.this);
 
 StopReceiving Updates whenever you are done with your stuffs by calling :
-
-/*Stop ReceivingUpdates*/
 SignificantLocationChange.sharedInstance().stopReceivingUpdates(SampleActivity.this);
 
 Implement interface to be updated with new location :
