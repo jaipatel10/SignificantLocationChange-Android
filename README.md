@@ -14,7 +14,8 @@ Implement interface to be updated with new location :
 
 Interface : SignificantLocationChange.SignificantLocation
 
-@Override public void onLocationChanged(Location mLocation) {
+@Override
+public void onLocationChanged(Location mLocation) {
 
 }
 
